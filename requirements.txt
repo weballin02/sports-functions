@@ -1,0 +1,13 @@
+streamlit
+nfl_data_py
+pandas
+numpy
+scipy
+plotly
+seaborn
+matplotlib
+scikit-learn
+statsmodels
+sqlalchemy
+openpyxl
+
