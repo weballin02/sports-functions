@@ -1,0 +1,38 @@
+{
+  "nfl_stats": {
+    "file_pattern": "nfl_stats_*.csv",
+    "columns": {
+      "Date": "date",
+      "HomeTeam": "home_team",
+      "AwayTeam": "away_team",
+      "HomeScore": "home_score",
+      "AwayScore": "away_score"
+    },
+    "dtypes": {
+      "date": "datetime",
+      "home_score": "int",
+      "away_score": "int"
+    },
+    "parse_dates": ["date"],
+    "processing_function": "process_nfl_stats"
+  },
+  "nba_player_stats": {
+    "file_pattern": "nba_player_stats_*.csv",
+    "columns": {
+      "GameDate": "date",
+      "PlayerName": "player_name",
+      "Team": "team",
+      "Points": "points",
+      "Assists": "assists",
+      "Rebounds": "rebounds"
+    },
+    "dtypes": {
+      "date": "datetime",
+      "points": "float",
+      "assists": "float",
+      "rebounds": "float"
+    },
+    "parse_dates": ["date"],
+    "processing_function": "process_nba_player_stats"
+  }
+}
