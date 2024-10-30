@@ -29,7 +29,15 @@ from utils.user_database import initialize_database, add_user, verify_user, get_
 from utils.auth import hash_password, check_password
 from utils.column_mapper import interactive_column_mapping, apply_column_mapping
 
-# Initialize the database
+# Ensure the directory exists before initializing the database
+data_dir = os.path.join(os.getcwd(), 'data')
+if not os.path.exists(data_dir):
+    os.makedirs(data_dir)
+
+# Define the path to the database
+DB_PATH = os.path.join(data_dir, 'users.db')
+
+# Call the function to initialize the database
 initialize_database()
 
 # Define the path to the SQLite database (for direct access in login_page)
