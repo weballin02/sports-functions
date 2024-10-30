@@ -10,4 +10,4 @@ scikit-learn
 statsmodels
 sqlalchemy
 openpyxl
-
+bcrypt
